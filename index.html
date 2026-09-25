@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Voltio: materiales eléctricos para presupuestar tus trabajos en segundos." />
+    <title>Voltio | Material eléctrico para tus presupuestos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-strip">
+      <div class="container strip-inner">
+        <span><span class="status-dot"></span> Precios profesionales actualizados hoy</span>
+        <span>Comparamos precios en tiendas cercanas <span class="strip-separator">|</span> Ayuda para tu presupuesto</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-main">
+        <a class="brand" href="#top" aria-label="Voltio, inicio">
+          <span class="brand-mark">V</span>
+          <span>voltio<span class="brand-dot">.</span></span>
+        </a>
+        <button class="location" id="location-button" type="button"><span class="pin-icon">+</span><span><small>Buscar cerca de</small><strong>28001 Madrid</strong></span></button>
+        <form class="search-form" id="search-form" role="search">
+          <label class="sr-only" for="search-input">Buscar material, marca o referencia</label>
+          <input id="search-input" type="search" placeholder="¿Qué necesitas para tu próximo trabajo?" autocomplete="off" />
+          <button type="submit" aria-label="Buscar">Buscar</button>
+        </form>
+        <div class="header-actions">
+          <button class="header-link" id="open-account" type="button"><span class="person-icon">◯</span><span><small id="account-greeting">Hola, profesional</small><strong id="account-label">Mi cuenta</strong></span></button>
+          <button class="budget-button" id="open-budget" type="button" aria-label="Abrir presupuesto"><span class="briefcase-icon">▣</span><span class="budget-label">Presupuesto</span><b id="budget-count">0</b></button>
+        </div>
+      </div>
+      <nav class="category-nav" aria-label="Categorías">
+        <div class="container nav-inner">
+          <button class="category-menu" type="button"><span class="menu-icon">☰</span> Todas las categorías</button>
+          <a href="#catalog">Cableado</a><a href="#catalog">Protecciones</a><a href="#catalog">Iluminación</a><a href="#catalog">Mecanismos</a><a href="#catalog">Herramientas</a><a href="#catalog">Domótica</a>
+          <a class="nav-highlight" href="#how-it-works">Cómo funciona <span>↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> Precios reales cerca de tu obra</div>
+          <h1>Presupuesta.<br /><em>Compara.</em> Responde rápido.</h1>
+          <p>Consulta qué necesitas, dónde encontrarlo abierto ahora y cuánto cuesta. Después suma tu trabajo y entrega un presupuesto claro.</p>
+          <div class="hero-actions"><a class="primary-button" href="#catalog">Buscar materiales <span>→</span></a><a class="text-link" href="#how-it-works">Ver cómo funciona <span>↗</span></a></div>
+          <div class="hero-proof"><div class="avatars"><span>JP</span><span>LM</span><span>AR</span><span>+</span></div><span><strong>2.400+</strong> profesionales ya trabajan con Voltio</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Resumen de un presupuesto de instalación">
+          <div class="visual-grid"></div>
+          <div class="invoice-card">
+            <div class="invoice-top"><span class="mini-logo">V</span><span class="invoice-status">BORRADOR</span></div>
+            <p>Presupuesto #0248</p><h2>Instalación vivienda<br />Calle Alcalá, 48</h2>
+            <div class="invoice-row"><span>Materiales</span><strong>482,60 EUR</strong></div><div class="invoice-row"><span>Mano de obra</span><strong>320,00 EUR</strong></div>
+            <div class="invoice-total"><span>Total estimado</span><strong>802,60 EUR</strong></div>
+            <div class="invoice-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="floating-note"><span>✓</span><div><strong>Abierto ahora · 1,4 km</strong><small>OBRAMAT · 8,95 EUR</small></div></div>
+          <div class="yellow-sun"></div>
+        </div>
+      </section>
+
+      <section class="brand-section container" aria-labelledby="brands-title">
+        <div class="section-heading"><div><span class="section-kicker">Busca por preferencia</span><h2 id="brands-title">Las marcas más buscadas</h2></div><a href="#catalog" class="view-all">Ver todas <span>→</span></a></div>
+        <div class="brand-row" id="brand-row"><button class="brand-chip active" data-brand="all" type="button">Todas</button><button class="brand-chip" data-brand="Schneider" type="button">Schneider<span>Electric</span></button><button class="brand-chip" data-brand="Legrand" type="button">legrand</button><button class="brand-chip" data-brand="Simon" type="button">SIMON</button><button class="brand-chip" data-brand="ABB" type="button">ABB<span>Better worlds</span></button><button class="brand-chip" data-brand="Philips" type="button">PHILIPS</button></div>
+      </section>
+
+      <section class="catalog-section container" id="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading catalog-heading"><div><span class="section-kicker">Material para tu próximo trabajo</span><h2 id="catalog-title">Compara antes de presupuestar</h2></div><div class="catalog-tools"><span id="result-count">14 productos</span><select aria-label="Ordenar productos" id="sort-select"><option value="relevant">Más relevantes</option><option value="distance">Tienda más cercana</option><option value="price">Precio más barato</option></select></div></div>
+        <div class="location-bar"><span class="location-bar-icon">+</span><div><strong>Tiendas alrededor de 28001 Madrid</strong><small>Mostrando precios y horarios actualizados</small></div><button id="change-location" type="button">Cambiar ubicación</button></div>
+        <div class="category-filter" id="category-filter" aria-label="Filtrar por categoría"></div>
+        <div class="catalog-layout"><aside class="filters"><strong>Filtrar por</strong><button class="filter-toggle" type="button">Categoría <span>⌃</span></button><label><input type="checkbox" checked /> Todo el material</label><label><input type="checkbox" /> Protecciones</label><label><input type="checkbox" /> Cableado</label><label><input type="checkbox" /> Mecanismos</label><button class="filter-toggle" type="button">Disponibilidad <span>⌄</span></button><label><input type="checkbox" /> Abierto ahora</label></aside><div class="product-grid" id="product-grid"></div></div>
+      </section>
+
+      <section class="how-section" id="how-it-works"><div class="container how-inner"><div><span class="section-kicker">Menos administración. Más obra.</span><h2>Tu próximo presupuesto<br /><em>empieza aquí.</em></h2></div><div class="steps"><div><b>01</b><strong>Busca</strong><span>Encuentra material por nombre, marca o referencia.</span></div><div><b>02</b><strong>Añade</strong><span>Construye tu lista de materiales con tus precios.</span></div><div><b>03</b><strong>Presupuesta</strong><span>Comparte un presupuesto listo para tu cliente.</span></div></div></div></section>
+    </main>
+
+    <aside class="budget-drawer" id="budget-drawer" aria-hidden="true"><div class="drawer-header"><div><span class="section-kicker">Tu trabajo</span><h2>Presupuesto nuevo</h2></div><button id="close-budget" type="button" aria-label="Cerrar presupuesto">×</button></div><div class="drawer-body" id="budget-items"><div class="empty-budget"><span>▣</span><strong>Aún no has añadido materiales</strong><p>Compara el catálogo y suma conceptos a tu próximo presupuesto.</p></div></div><div class="manual-product"><div><span class="section-kicker">¿No lo encuentras?</span><strong>Añade otro producto</strong></div><input id="manual-product-name" type="text" placeholder="Producto o referencia" /><div class="manual-product-row"><input id="manual-product-store" type="text" placeholder="Tienda" /><div class="money-input"><input id="manual-product-price" type="number" min="0" step="0.01" placeholder="Precio" /><span>EUR</span></div><button id="add-manual-product" type="button" aria-label="Añadir producto manual">+</button></div></div><div class="cost-fields"><label>Mano de obra <div class="money-input"><input id="labor-cost" type="number" min="0" step="0.01" placeholder="0,00" /><span>EUR</span></div></label><label>Transporte <div class="money-input"><input id="transport-cost" type="number" min="0" step="0.01" placeholder="0,00" /><span>EUR</span></div></label><label>Otros conceptos <div class="money-input"><input id="other-cost" type="number" min="0" step="0.01" placeholder="0,00" /><span>EUR</span></div></label></div><div class="drawer-footer"><div><span>Total del presupuesto</span><strong id="budget-total">0,00 EUR</strong></div><button class="primary-button" type="button">Revisar presupuesto <span>→</span></button></div></aside><div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="toast" id="toast" role="status">Añadido al presupuesto</div>
+    <div class="account-modal" id="account-modal" aria-hidden="true"><div class="account-card"><button class="account-close" id="close-account" type="button" aria-label="Cerrar cuenta">×</button><span class="section-kicker">Tu espacio Voltio</span><h2 id="account-title">Crea tu cuenta profesional</h2><p id="account-copy">Guarda tus presupuestos y vuelve a ellos desde cualquier dispositivo.</p><form id="account-form"><label id="account-name-field">Nombre profesional<input id="account-name" type="text" placeholder="Tu nombre o empresa" autocomplete="name" /></label><label>Correo electrónico<input id="account-email" type="email" placeholder="tu@email.com" autocomplete="email" required /></label><label>Contraseña<input id="account-password" type="password" placeholder="Mínimo 6 caracteres" autocomplete="new-password" required minlength="6" /></label><button class="primary-button" id="account-submit" type="submit">Crear cuenta <span>→</span></button></form><button class="account-switch" id="account-switch" type="button">Ya tengo una cuenta · Iniciar sesión</button><div class="account-sync"><span>●</span> Tus datos se sincronizan cuando conectes el servidor de GitHub</div></div></div>
+    <style>
+      .location{border:0;background:transparent;padding:0;text-align:left;cursor:pointer;color:var(--ink)}
+      .location-bar{display:flex;align-items:center;gap:11px;background:#eaf6f1;border:1px solid #cde9dd;padding:12px 15px;margin:-5px 0 23px;color:var(--ink)}
+      .location-bar-icon{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;transform:rotate(45deg)}
+      .location-bar strong,.location-bar small{display:block}.location-bar strong{font-size:12px}.location-bar small{font-size:10px;color:#527b6c;margin-top:2px}.location-bar button{margin-left:auto;border:0;background:transparent;color:var(--green);font-size:11px;font-weight:700;cursor:pointer}
+      .store-line{display:flex;gap:7px;align-items:flex-start;border-top:1px solid #edf1f4;padding-top:10px;margin-top:10px}.store-line strong,.store-line small{display:block}.store-line strong{font-size:10px;color:var(--ink)}.store-line small{font-size:9px;color:var(--green);margin-top:2px}.open-dot{width:6px;height:6px;border-radius:50%;background:#53d6a1;margin-top:3px;flex:none}
+      .cost-fields{padding:0 28px 18px}.cost-fields label{display:flex;justify-content:space-between;align-items:center;color:#627d98;font-size:11px;margin-top:10px}.money-input{display:flex;border:1px solid var(--line);width:112px;height:31px}.money-input input{width:78px;border:0;outline:0;text-align:right;color:var(--ink);padding:0 6px;font-size:12px}.money-input span{font-size:9px;display:grid;place-items:center;color:#829ab1;padding-right:6px}.empty-results{grid-column:1/-1;color:#829ab1;padding:30px 0}
+      .manual-product{border-top:1px solid var(--line);padding:16px 28px 4px}.manual-product>div:first-child{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.manual-product>div:first-child strong{font-size:12px}.manual-product input{border:1px solid var(--line);height:31px;min-width:0;padding:0 8px;outline:0;font-size:11px;color:var(--ink)}.manual-product>input{width:100%;margin-bottom:7px}.manual-product-row{display:flex;gap:6px}.manual-product-row>input{width:100%}.manual-product-row .money-input{width:105px;flex:none}.manual-product-row .money-input input{width:65px}.manual-product-row button{border:0;background:var(--yellow);width:32px;font-size:20px;cursor:pointer;color:var(--ink)}.manual-product-row button:hover{background:var(--coral);color:#fff}
+      .product-link{margin-left:auto;color:var(--coral);font-size:9px;font-weight:700;white-space:nowrap;text-decoration:none}.product-link:hover{text-decoration:underline}.budget-item a{grid-column:1/-1;color:var(--coral);font-size:10px;text-decoration:none}.budget-item a:hover{text-decoration:underline}
+      .category-filter{display:flex;gap:8px;overflow:auto;padding:2px 0 18px}.category-filter button{border:1px solid var(--line);background:#fff;color:var(--ink-soft);padding:9px 13px;white-space:nowrap;font-size:11px;cursor:pointer}.category-filter button.active{background:var(--ink);border-color:var(--ink);color:#fff}.account-modal{position:fixed;inset:0;z-index:30;display:none;place-items:center;background:#102a4366;padding:20px}.account-modal.open{display:grid}.account-card{position:relative;width:min(410px,100%);background:#fff;padding:32px;box-shadow:0 20px 60px #102a4340}.account-card h2{font:700 27px/1.05 "Space Grotesk";letter-spacing:-1px;margin:12px 0 9px}.account-card p{color:var(--ink-soft);font-size:12px;line-height:1.5;margin:0 0 22px}.account-card label{display:block;font-size:11px;color:var(--ink-soft);margin-top:13px}.account-card input{display:block;width:100%;height:40px;border:1px solid var(--line);padding:0 11px;margin-top:6px;outline:0;font-size:12px;color:var(--ink)}.account-card input:focus{border-color:var(--yellow)}.account-card .primary-button{width:100%;justify-content:space-between;margin-top:22px}.account-close{position:absolute;right:14px;top:12px;border:0;background:none;font-size:26px;color:var(--ink);cursor:pointer}.account-switch{border:0;background:none;color:var(--coral);font-size:11px;font-weight:700;padding:18px 0 0;cursor:pointer}.account-sync{border-top:1px solid var(--line);color:#829ab1;font-size:10px;margin-top:20px;padding-top:14px}.account-sync span{color:var(--green);font-size:13px;margin-right:5px}
+      @media(max-width:640px){.account-card{padding:25px}.category-filter{margin-right:-16px}}
+    </style>
+    <script src="catalog-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
